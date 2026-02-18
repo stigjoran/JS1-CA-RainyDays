@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RainyDays - Stay Warm This Winter</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="nav-left">
+      <a href="index.html">Home</a>
+      <a href="index.html">Shop</a>
+    </nav>
+
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/RainyDays_Logo.png" alt="RainyDays Logo">
+      </a>
+    </div>
+
+  <div class="nav-right">
+   <a href="./checkout/index.html">
+    <img src="images/cart-icon.png" alt="Cart" class="cart-icon">
+   </a>
+  </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>STAY WARM THIS WINTER</h1>
+    <p>Step into the season with your perfect rainwear</p>
+    <a href="#productList" class="btn">Shop</a>
+  </section>
+
+  <!-- Produkter -->
+  <section class="products">
+    <h2>Featured Jackets</h2>
+    <div class="filters">
+      <label>
+        Gender
+        <select id="genderFilter">
+          <option value="all">All</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+        </select>
+      </label>
+
+      <label>
+        Tag
+        <select id="tagFilter">
+          <option value="all">All</option>
+        </select>
+      </label>
+
+      <label>
+        On sale
+        <input type="checkbox" id="saleFilter">
+      </label>
+    </div>
+
+    <div id="productsStatus" aria-live="polite"></div>
+    <div id="productList" class="product-list"></div>
+
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Get early access to sales, new products, and insider tips.</h2>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Your email">
+      <button type="submit">Get Updates</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div><h4>Product</h4><p>Features</p><p>Pricing</p></div>
+    <div><h4>Company</h4><p>About</p><p>Careers</p></div>
+    <div><h4>Legal</h4><a href="privacy.html">Privacy Policy</a></div>
+    <div><h4>RainyDays Inc.</h4><p>123 Rain Street, Oslo, Norge</p><p>Email: support@rainydays.com</p></div>
+  </footer>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
